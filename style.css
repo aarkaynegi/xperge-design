@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@font-face {
+    font-family: "customScript";
+    src: url(./Brush\ Script\ Std\ Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #005762;
+    --primaryDark: #043f47;
+    --secondary: #f6f6f6;
+    --tertiary: #dfe0e2;
+    --black: #000000;
+    --red: #c21616;
+    --blue: #0000ff;
+    --green: #82d233;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.primaryColor {
+    color: var(--primary);
+}
+
+.secondaryColor {
+    color: var(--secondary);
+}
+
+.tertiaryColor {
+    color: var(--tertiary);
+}
+
+.blackColor {
+    color: var(--black);
+}
+
+.blueColor {
+    color: var(--blue);
+}
+
+.redColor {
+    color: var(--red);
+}
+
+.greenColor {
+    color: var(--green);
+}
+
+.primaryBackground {
+    background-color: #005762;
+    color: #fff;
+}
+
+.secondaryBackground {
+    background-color: #f6f6f6;
+    color: #000;
+}
+
+.customBorder {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.fontSmall {
+    font-size: 14px;
+}
+
+.fontLarge {
+    font-size: 18px;
+}
+
+.logo {
+    font-family: "customScript";
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.customSelect {
+    appearance: none !important;
+}
+
+.circle {
+    width: 42px;
+    aspect-ratio: 1;
+    background-color: #D6D6D6;
+    border-radius: 50%;
+}
+
+.nav-link,
+.nav-link:visited {
+    color: var(--black);
+    background-color: var(--secondary);
+}
+
+.nav-link.logout {
+    color: var(--red);
+    background-color: var(--secondary);
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link:hover i {
+    color: var(--primary) !important;
+    background-color: var(--tertiary);
+    font-weight: 700;
+}
+
+.lang.active {
+    font-weight: 700;
+}
+
+main .card-header h4 {
+    font-size: 14px;
+}
+
+.dataCard .card-title {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.dataCard .card-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.customRanking {
+    font-size: 14px;
+}
+
+.customRanking p {
+    margin: 0;
+}
+
+
+/* Sign In  & Reset Password Page */
+
+.sign-in-page .content,
+.reset-password-page .content {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.sign-in-page .form-signin,
+.reset-password-page .form-reset-password {
+    width: 100%;
+    max-width: 500px;
+    gap: 150px
+}
+
+.sign-in-page .sign-in-footer,
+.reset-password-page .reset-pass-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in-page .form-signin input,
+.reset-password-page .form-reset-password input {
+    background-color: #f6f6f6;
+}
+
+.sign-in-page .form-signin input::placeholder,
+.reset-password-page .form-reset-password input::placeholder {
+    color: #7b7b7b
+}
+
+.form-signin button[type=submit],
+.form-reset-password button[type=submit] {
+    width: 100%;
+    color: #fff;
+    background-color: var(--primary);
+}
+
+.form-signin button[type=submit]:is(:hover, :focus, :active),
+.form-reset-password button[type=submit]:is(:hover, :focus, :active) {
+    width: 100%;
+    color: #fff;
+    background-color: var(--primaryDark);
+}
+
+#feedback:has(em)::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-image: url(https://img.icons8.com/ios-glyphs/15/c21616/high-importance.png);
+}
+
+#feedback:has(em) {
+    margin-bottom: 10px !important;
+}
